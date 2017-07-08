@@ -336,3 +336,33 @@ video {
   color: white;
   margin: 0 auto;
 }
+
+
+/*portfolio*/
+
+.portfolio {
+  background-color: black;
+  position: relative;
+  padding-bottom: 5vw;
+}
+
+.portfolio img {
+  width: 200px;
+  margin: 5vw auto;
+}
+
+.por-wrapper {
+  margin: 0 auto;
+  width: 95%;
+  height: 340px;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.por-wrapper div {
+  display: inline-block;
+  height: 320px;
+  width: 320px;
+  margin: 0 10px 0 0;
+  border: 1px solid white;
+}
