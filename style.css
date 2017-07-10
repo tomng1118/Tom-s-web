@@ -17,7 +17,7 @@
 
 .nav-desk {
   text-align: right;
-  padding: 40px 0px;
+  padding: 50px 0px;
   font-family: 'PT Sans', sans-serif;
   font-size: 12px;
   width: 100%;
@@ -77,7 +77,7 @@ a {
 }
 
 video {
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   top: 0;
   left: 50%;
@@ -152,7 +152,7 @@ video {
 }
 
 .interactive {
-  background-image: url("https://s-media-cache-ak0.pinimg.com/564x/48/62/ae/4862ae777d850b1faa8e677ea147c20c.jpg")
+  background-image: url("assets/ui.png")
 }
 
 .overlay {
@@ -212,7 +212,7 @@ video {
 /*about*/
 
 .intro {
-  padding: 120px;
+  padding: 150px;
   background: linear-gradient(130deg, #000000, #2e3a42);
   animation: gradient 10s ease infinite;
   background-size: 300% 300%;
