@@ -7,3 +7,13 @@ $('.work_item').mouseout(function() {
   $(this).children('.tag').removeClass('hover');
   $(this).children('.overlay').removeClass('hover');
 });
+
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 100) {
+    $('.nav-desk').addClass('scrolled');
+  };
+  if ($(window).scrollTop() < 100) {
+    $('.nav-desk').removeClass('scrolled');
+  }
+});
