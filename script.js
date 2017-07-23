@@ -14,4 +14,5 @@ $('.work_item').mouseout(function() {
 if ($(window).width() <= 768) {
   $(".work_item").children('.tag').addClass('hover');
   $(".work_item").children('.overlay').addClass('hover');
+  $("#logo").attr('src', 'logo-mobile.png');
 };

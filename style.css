@@ -75,10 +75,9 @@ a {
   overflow-y: hidden;
   overflow-x: hidden;
   transition: .5s;
-  background-image: url(assets/wall.jpg);
 }
 
-video {
+.hero video {
   opacity: 1;
   position: absolute;
   top: 0;
@@ -87,7 +86,6 @@ video {
   height: 100%;
   object-fit: cover;
   transform: translateX(-50%);
-  display: none;
 }
 
 .overlay-hero {
@@ -97,13 +95,23 @@ video {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.overlay-hero img {
+#logo {
   position: absolute;
   max-width: 1080px;
   width: 90vw;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -55%);
+}
+
+#logo-mobile {
+  position: absolute;
+  max-width: 1080px;
+  width: 80vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  display: none;
 }
 
 #scroll-icon {
@@ -123,8 +131,14 @@ video {
   .hero {
     height: 100vh;
   }
-  video {
+  .hero video {
     display: none;
+  }
+  #logo {
+    display: none;
+  }
+  #logo-mobile {
+    display: block;
   }
 }
 
