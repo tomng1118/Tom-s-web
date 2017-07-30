@@ -13,7 +13,7 @@
 }
 
 body {
-  background: linear-gradient(130deg, #000000, #2e3a42);
+  background: linear-gradient(130deg, #000000, #21272a);
   animation: gradient 10s ease infinite;
   background-size: 300% 300%;
 }
@@ -75,6 +75,8 @@ a {
   overflow-y: hidden;
   overflow-x: hidden;
   transition: .5s;
+  background-image: url(assets/wall.jpg);
+  background-position: 60% 50%;
 }
 
 .hero video {
@@ -104,16 +106,6 @@ a {
   transform: translate(-50%, -55%);
 }
 
-#logo-mobile {
-  position: absolute;
-  max-width: 1080px;
-  width: 80vw;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -55%);
-  display: none;
-}
-
 #scroll-icon {
   width: 30px;
   position: absolute;
@@ -135,10 +127,8 @@ a {
     display: none;
   }
   #logo {
-    display: none;
-  }
-  #logo-mobile {
-    display: block;
+    position: absolute;
+    bottom: 100px;
   }
 }
 
@@ -220,7 +210,6 @@ a {
   }
   .work_item {
     height: 400px;
-    margin: 10px 0;
   }
   .tag {
     margin-left: 0px;
@@ -310,13 +299,13 @@ a {
 
 @media screen and (max-width:768px) {
   .about {
-    padding: 80px 0px 20px 0px;
+    padding: 40px 0px 40px 0px;
   }
   .text-wrapper {
     display: block;
   }
   .wrapper-about {
-    margin: 20px auto;
+    margin: 20px auto 0 auto;
     width: 90%;
     display: block;
   }
