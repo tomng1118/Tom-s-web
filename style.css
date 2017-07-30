@@ -231,7 +231,7 @@ a {
 /*about*/
 
 .intro {
-  padding: 80px;
+  padding: 100px;
 }
 
 .intro-text {
@@ -239,9 +239,10 @@ a {
   font-family: 'Raleway', sans-serif;
   margin: 0 auto;
   width: 90%;
+  max-width: 1080px;
   color: white;
   letter-spacing: 2px;
-  line-height: 60px;
+  line-height:70px;
   font-size: 30px;
 }
 
