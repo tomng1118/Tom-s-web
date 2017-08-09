@@ -65,4 +65,20 @@ $(".item").mouseenter(function() {
     $(".portfolio").css("background-image", "url('assets/" + srcImg + "')");
     $("#gg").text(srcImg);
   }
+  if ($(this).find("img").attr('id') == "bg-illu2.jpg") {
+    $(".doc").css("transform", "scaleY(1)");
+    $("#d1").css("transform", "scaleY(2)");
+  }
+  if ($(this).find("img").attr('id') == "bg-illu1.jpg") {
+    $(".doc").css("transform", "scaleY(1)");
+    $("#d2").css("transform", "scaleY(2)");
+  }
+  if ($(this).find("img").attr('id') == "bg-pos1.jpg") {
+    $(".doc").css("transform", "scaleY(1)");
+    $("#d3").css("transform", "scaleY(2)");
+  }
+  if ($(this).find("img").attr('id') == "bg-int1.jpg") {
+    $(".doc").css("transform", "scaleY(1)");
+    $("#d4").css("transform", "scaleY(2)");
+  }
 });
