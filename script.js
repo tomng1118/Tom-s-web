@@ -44,3 +44,25 @@ $("#nav-contact").click(function() {
     },
     'slow');
 });
+
+var screenW = $(window).width();
+var screenH = $(window).height();
+//scroll left hover
+$(".slide").mousemove(function(event) {
+  var mousex = event.clientX;
+  var persentage = mousex / screenW;
+  var contentW = $(".slide")[0].scrollWidth;
+  $(this).scrollLeft(persentage * contentW - 700);
+});
+
+
+
+//dynamic bg
+var srcImg = "";
+$(".item").mouseenter(function() {
+  if ($(this).find("img").attr('src') != srcImg) {
+    srcImg = $(this).find("img").attr('id');
+    $(".portfolio").css("background-image", "url('assets/" + srcImg + "')");
+    $("#gg").text(srcImg);
+  }
+});
